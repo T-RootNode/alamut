@@ -53,6 +53,12 @@ The goal is to understand every line that goes into production.
 
 ---
 
+## Session files
+
+Each coding session has a SESSION_XX.md file.
+These are planning documents — written before the session, used as context for a fresh chat.
+They are not tutorials, they are blueprints.
+
 ## Status
 
 Early development. Nothing works yet. Come back later.
