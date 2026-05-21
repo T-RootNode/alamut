@@ -1,7 +1,7 @@
 # Session 03 — while + if/elif/else: CLI Menu
 
 ## Status
-Planned.
+Done.
 
 ## Concept for this session
 No new concept — consolidation. Combining everything learned into real Alamut code.
@@ -12,36 +12,50 @@ No new concept — consolidation. Combining everything learned into real Alamut 
 - `if`, `elif`, `else`
 - `while` loops and conditions
 
-## What I should know by the end
-- How to build a loop that keeps running until the user decides to stop
-- How to structure a CLI menu cleanly
-- How `while True` works with a `break` condition (new syntax, same concept)
+## What I learned
+- `while True` runs forever until `break` stops it
+- Everything that should repeat must be inside the loop
+- This is real Alamut code — the main menu skeleton is done
 
-## Exercise
-Build the Alamut main menu:
+## Code written this session
 
+```python
+####################################################
+# Thing 03 - 21.05.2026
+#
+# WHAT I LEARNED:
+#   - while True runs forever until break stops it
+#   - everything that should repeat must be inside the loop
+#
+####################################################
+
+while True:
+    print("===Alamut===")
+    print("1 = Backup starten")
+    print("2 = Status anzeigen")
+    print("3 = Beenden")
+    input_raw = input("bitte eine zahl eingeben:")
+    input_as_int = int(input_raw)
+    if input_as_int == 1:
+        print("gäbe es ein programm würde es nun laufen :)")
+    elif input_as_int == 2:
+        print("status alles ist hell")
+    elif input_as_int == 3:
+        break
+    else:
+        print("leider habe ich die eingabe nicht verstanden bitte nur zahlen 1-3")
 ```
-=== Alamut ===
-1 = Backup starten
-2 = Status anzeigen
-3 = Beenden
-
-Auswahl: _
-```
-
-- Menu displays, user types a number
-- Program responds to each option
-- Menu shows again after each action
-- Option 3 exits the program
-- Invalid input gets a message, not a crash
 
 ## Out of scope for this session
 - Functions
 - `for` loops
 - `try` / `except`
-- Actually running backups or reading status (placeholder prints only)
+- Actually running backups or reading status
 - File handling
+
+## Next session (rough idea, not committed)
+Functions — putting reusable logic into named blocks.
 
 ## Notes for next chat
 Start of next chat: paste this file + CLAUDE.md + README.md back in,
-say "Session 03 starten" and the tutor begins with the first exercise.
+say "Session 04 starten" and the tutor begins with the first exercise.
